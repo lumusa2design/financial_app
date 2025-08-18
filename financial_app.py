@@ -14,7 +14,7 @@ def iso_now():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 def iso_to_human(ts_iso: str) -> str:
-    try:
+    try:eval "$(ssh-agent -s)"
         dt = datetime.strptime(ts_iso, "%Y-%m-%d %H:%M:%S")
         return dt.strftime("%d/%m/%Y %H:%M")
     except Exception:
